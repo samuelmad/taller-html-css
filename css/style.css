@@ -1,8 +1,100 @@
 @import 'reset.css';
 
+/* Styles Mobile First */
+a {
+  text-decoration: none;
+}
+article {
+  padding: 0 16px;
+  text-align: center;
+}
+article p {
+  text-align: justify;
+}
+article h3 {
+  text-align: left;
+}
+#contenedor {
+  width: 100%;
+}
+.cabecera {
+  width: 100%;
+  text-align: center;
+}
+.empresa {
+  background: #ceb3ee;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  padding: 10px 20px;
+  margin: 0;
+}
+.menu-principal {
+  background:#f5cc98;
+  overflow: hidden;
+  padding: 10px 0;
+
+}
+.menu-principal ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu-principal li {
+  display: inline-block;
+}
+.menu-principal li::after {
+  content: '|';
+  margin-left: 6px;
+}
+.menu-principal li:last-child::after {
+  content: none;
+
+}
+.seccion-imagen {
+  overflow: hidden;
+  position: relative;
+}
+.seccion-imagen img {
+  width: 100%;
+  border-radius: 0;
+  transition: border 2s;
+}
+.seccion-imagen img:hover {
+  border-radius: 50%;
+
+}
+.seccion-imagen figcaption {
+  bottom: -50px;
+  position: absolute;
+  transition: bottom 1s ease-in-out;
+  padding: 5px;
+  background: rgba(205, 179, 238, 0.5);
+}
+.seccion-imagen:hover figcaption {
+
+  bottom: 10px;
+}
+
+
+
 @media (min-width: 420px){
+  article {
+    background: #f5cc98;
+  }
 }
 @media (min-width: 768px){
+  .seccion.principal {
+    background: #fff;
+    
+  }
+
 }
-@media (min-width: 1024px){
+@media (min-width: 1024px){ 
+  .seccion {
+    background: #fff;
+    float: left;
+    margin-left:25px; 
+    width: 30%;
+  }
 }
